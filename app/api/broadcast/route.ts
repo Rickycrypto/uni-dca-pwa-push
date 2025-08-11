@@ -1,7 +1,7 @@
 
 import { NextResponse } from 'next/server'
 import webpush from 'web-push'
-import { getSubs } from '../subscribe/route'
+import { getSubs } from '../../../lib/subStore'
 
 export async function POST(req: Request) {
   const key = process.env.BROADCAST_KEY || ''
